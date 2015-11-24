@@ -1,0 +1,9 @@
+<ul>
+	{{#each content as |state|}}
+		<li>
+			{{#link-to route-name (query-params extState=state)}}
+				{{state}}
+			{{/link-to}}
+		</li>
+	{{/each}}
+</ul>
